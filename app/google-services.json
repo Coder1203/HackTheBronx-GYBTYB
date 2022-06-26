@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "308505731498",
+    "firebase_url": "https://gyb-tyb-project-default-rtdb.firebaseio.com",
+    "project_id": "gyb-tyb-project",
+    "storage_bucket": "gyb-tyb-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308505731498:android:5f0e257c6c4a49dc0e0bd3",
+        "android_client_info": {
+          "package_name": "com.blackgrapes.gyb_tyb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308505731498-46jrkrt3hbadsn028kkq1k4sjhdh3ncq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blackgrapes.gyb_tyb",
+            "certificate_hash": "5f24fa4c99e97f8d52dadf1049f39868d1077a65"
+          }
+        },
+        {
+          "client_id": "308505731498-6f71lpqnvfp4jln472pa424eed8gpo5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEfFswnMvIn1hh8qR-HV4sMB6xUXKBDFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308505731498-6f71lpqnvfp4jln472pa424eed8gpo5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

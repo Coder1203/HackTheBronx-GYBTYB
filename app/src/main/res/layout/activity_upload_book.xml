@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#8e70ff"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context=".upload_book_activity"
+    android:id="@+id/main_lay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/book_img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/book_upload" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+
+
+                android:id="@+id/main_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputTitle"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:textColorHint="#747475"
+                        app:boxStrokeColor="#8e70ff"
+                        app:hintTextColor="#747475"
+                        app:startIconDrawable="@drawable/ic_baseline_title_24"
+                        app:startIconTint="#747475">
+
+                        <EditText
+                            android:id="@+id/editTextTitle"
+                            style="@style/modifiedEditText"
+                            android:backgroundTint="@color/whiteTextColor"
+                            android:hint="Title"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/black" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputState"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:textColorHint="#747475"
+                        app:boxStrokeColor="#8e70ff"
+                        app:hintTextColor="#747475"
+                        app:startIconDrawable="@drawable/quill_with_ink_24px"
+                        app:startIconTint="#747475">
+
+                        <EditText
+                            android:id="@+id/editTextWriter"
+                            style="@style/modifiedEditText"
+                            android:backgroundTint="@color/whiteTextColor"
+                            android:hint="Writer"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/black" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputTopic"
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:textColorHint="#747475"
+                        app:boxStrokeColor="#8e70ff"
+                        app:hintTextColor="#747475"
+                        app:startIconDrawable="@drawable/topic_24px"
+                        app:startIconTint="#747475">
+
+                        <EditText
+                            android:id="@+id/editTextTopic"
+                            style="@style/modifiedEditText"
+                            android:backgroundTint="@color/whiteTextColor"
+                            android:hint="Topic"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:textColor="@color/black" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.apachat.loadingbutton.core.customViews.CircularProgressButton
+                        android:id="@+id/upload_btn"
+                        style="@style/loginButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:text="Upload"
+                        app:initialCornerAngle="27dp"
+                        app:spinning_bar_color="#FFF"
+                        app:spinning_bar_padding="6dp"
+                        app:spinning_bar_width="4dp"
+                        tools:ignore="MissingClass" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <!-- <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginRight="11dp"
+         android:layout_marginBottom="30dp"
+         android:adjustViewBounds="false"
+         android:onClick="onLoginClick"
+         android:src="@drawable/ic_back_img" />-->
+</RelativeLayout>
